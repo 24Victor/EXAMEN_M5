@@ -1,3 +1,8 @@
+/** 
+ * @author Victor Zheng
+ * @version 1.0
+ * @since 30-01-2023
+ */
 public class Planeta 
 {
     //DOCUMENTAR
@@ -7,8 +12,15 @@ public class Planeta
     int diametre;
     int pes;    
 
+    
     //DOCUMENTAR
     //Contructor amb tots els parametres    
+    /**
+     * 
+     * @param nom
+     * @param diametre
+     * @param pes
+     */
     public Planeta(String nom, int diametre, int pes)
     {
         //assignem el valor de nom del constructor planeta al nom del class Planeta
@@ -21,9 +33,15 @@ public class Planeta
 
     //DOCUMENTAR
     //Estem creant un public Contructor Planeta què està buit
+    /**
+     * @param
+     */
     public Planeta(){}
 
     //DOCUMENTAR
+    /**
+     * @return
+     */
     public int planetaEnano()
     {
         //Si diametre es menor que 1300 retorna 1 i sino retorna 0.
@@ -38,6 +56,9 @@ public class Planeta
     }
 
     //DOCUMENTAR
+    /**
+     * @param
+     */
     public void expansio()
     {        
         //Fem que el diamtre es multiple * 3 als planetes, i com es void no cal fer un return.
@@ -45,6 +66,11 @@ public class Planeta
     }
 
     //DOCUMENTAR
+    /**
+     * 
+     * @param meteorito
+     * @return
+     */
     public int colisio(int meteorito)
     {
         //Si el pes es mes gran o igual a 1800 retorna 1
@@ -59,31 +85,50 @@ public class Planeta
     }
 
     //Getters i setters
+    /**
+     * 
+     * @return
+     */
     public String getNom()
     {
         return this.nom;
     }
-
+    /**
+     * 
+     * @param nom
+     */
     public void setNom(String nom)
     {
         this.nom = nom;
     }
-
+    /**
+     * 
+     * @return
+     */
     public int getDiametre()
     {
         return this.diametre;
     }
-
+    /**
+     * 
+     * @param diametre
+     */
     public void setDiametre(int diametre)
     {
         this.diametre = diametre;
     }
-    
+    /**
+     * 
+     * @return
+     */
     public int getPes()
     {
         return this.pes;
     }
-
+    /**
+     * 
+     * @param pes
+     */
     public void setPes(int pes)
     {
         this.pes = pes;
