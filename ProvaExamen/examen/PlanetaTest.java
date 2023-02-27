@@ -29,10 +29,12 @@ public class PlanetaTest {
         int diametre1 = 1800;
         int pes1 = 1400;
 
+        Planeta planeta = new Planeta(nom1, diametre1, pes1);
+        planeta.expansio();
         float expected = 1800 * 3;
-        float actual = planeta.getExpansio();
-        assertEquals(expected, actual);
+        float actual = planeta.expansio(diamtre1);
         //assertEquals(expected, actual);
+        assertEquals(expected, actual);
 
     }
 
