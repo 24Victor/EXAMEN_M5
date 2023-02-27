@@ -9,9 +9,6 @@ import static org.junit.Assert.assertNotEquals;
 
 public class PlanetaTest {    
 
-    /**
-     * @param
-     */
     @Test 
     public void testPlanetaEnano()
     {     
@@ -24,26 +21,21 @@ public class PlanetaTest {
 
         assertEquals(planeta.getPlanetaEnano());
     }
-     
-    /**
-     * @param
-     */
+                
     @Test 
     public void testExpansio()
     {
+        String nom1 = "Jupiter";
         int diametre1 = 1800;
-        Planeta planeta = new Planeta(nom, diametre);
+        int pes1 = 1400;
 
         float expected = 1800 * 3;
-        float actual = planeta.getExpansio(diametre);
+        float actual = planeta.getExpansio();
         assertEquals(expected, actual);
         //assertEquals(expected, actual);
 
     }
 
-    /**
-     * @param
-     */
     @Test 
     public void testColisio()
     {        
